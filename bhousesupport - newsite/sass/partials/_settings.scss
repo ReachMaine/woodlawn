@@ -1,0 +1,32 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$linkcolor: #a62425;
+$titleFontColor:  #314c3e; 
+$reach_orange:  #f58220; 
+$facebook_blue: #3a589d;
+// Background colors: 
+
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+$woodlawn-primary: #884935; // also set in theme options - red-brown (top bar, etc)
+$woodlawn-secondary: #314c3e; // set in theme options // forest green;
+$woodlawn-tertiary: #eed7bc; // I made this one up. // lt orange
+$woodlawn-light-bkg: #F1E6D8; // light beige, color of masthead (also set in theme options)
+
+/* Typography ------------------------------------------ */
+$linkcolor: #a62425;
+
+/*--- Mobile sizes ---- */
+$MobileL: 425;
+
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+	content: url('images/reach-favicon.png');
+	padding-right: 3px;
+}
+.button.tertiary {
+	background-color: $woodlawn-tertiary!important;
+}

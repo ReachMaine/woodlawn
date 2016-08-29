@@ -1,0 +1,300 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: WoodlawnSupport
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome for Woodlawn Museum's support functionality
+Author: Reach Maine
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/*--- Mobile sizes ---- */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+.button.tertiary {
+  background-color: #eed7bc !important; }
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
+/* styling for woocommerce ....
+*/
+input#nyp {
+  max-width: 120px;
+  color: #222; }
+
+.hide-laptop {
+  display: none !important;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
+
+/* =Theme customization starts here */
+/*** HEADER *****/
+#top-bar .left-text a {
+  color: white; }
+
+#logo {
+  /*	vertical-align: bottom;
+  	position: absolute;
+  	height: 74px;
+  	bottom: 5px;
+  	a {
+  		padding-top: 0px;
+  	} */ }
+
+#menu-main-menu.top-bar-nav li a {
+  font-size: 1.1em; }
+
+#menu-main-menu.top-bar-nav li a,
+#site-navigation.header-nav li a {
+  font-family: 'Old Standard TT', Georgia, serif; }
+  #menu-main-menu.top-bar-nav li a center,
+  #site-navigation.header-nav li a center {
+    opacity: 0.5; }
+  #menu-main-menu.top-bar-nav li a center:hover,
+  #site-navigation.header-nav li a center:hover {
+    opacity: 1.0; }
+
+ul.header-nav li {
+  margin-left: 50px; }
+
+/* Huge IT Slider */
+.wlm-homeslider-description {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 15px;
+  font-family: 'Old Standard TT', sans-serif;
+  font-weight: 700;
+  font-size: 20px; }
+  .wlm-homeslider-description a.button {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: .6em;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .wlm-homeslider-description a {
+    color: #eed7bc; }
+  .wlm-homeslider-description a:hover {
+    color: black; }
+
+.wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+  padding: 2px 0px;
+  position: relative; }
+
+.block-html-after-header {
+  margin-bottom: -25px; }
+
+/**** CONTENT *****/
+h1.entry-title, h1.page-title,
+h2.tribe-events-page-title, h1.tribe-events-single-event-title {
+  color: #314c3e; }
+
+.ux-slider, .ux-row-slider {
+  margin-bottom: 0px; }
+
+.woodlawn-section:nth-child(even) {
+  background-color: #f1e6d8;
+  padding-top: 10px;
+  padding-bottom: 16px; }
+
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+.product-lightbox .product-gallery-slider .slide img {
+  padding-top: 5px;
+  padding-left: 5px; }
+
+.cart_item .product-thumbnail img {
+  width: 90px !important; }
+.cart_item td.product-name {
+  padding-left: 10px !important; }
+
+.product-info .product_meta {
+  display: none; }
+
+.woodlawn-contact {
+  padding: 10px;
+  background-color: #f1e6d8;
+  border: 1px solid #884935; }
+  .woodlawn-contact input[name="your-name"], .woodlawn-contact input[name="your-email"] {
+    max-width: 280px; }
+
+#content .page-inner > article.post img {
+  	/* width: initial;
+      max-width: 400px;
+      max-height: 400px;
+      padding-left: 10px; */ }
+#content .page-inner > article.post .post-date {
+  display: none; }
+
+.ux_banner .inner.bottom {
+  bottom: 0px !important; }
+
+/*** photo price table styling ****/
+table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
+  text-align: center;
+  padding: .5em 5px; }
+
+#wonderplugincarousel-1 .amazingcarousel-list-container .amazingcarousel-bottom-shadow,
+#wonderplugincarousel-2 .amazingcarousel-list-container .amazingcarousel-bottom-shadow,
+.wonderplugincarousel-container .wonderplugincarousel .amazingcarousel-list-container .amazingcarousel-bottom-shadow {
+  display: none !important; }
+#wonderplugincarousel-1 .amazingcarousel-list-container .amazingcarousel-list-wrapper .amazingcarousel-list .amazingcarousel-item .amazingcarousel-item-container .amazingcarousel-image .amazingcarousel-text + div,
+#wonderplugincarousel-2 .amazingcarousel-list-container .amazingcarousel-list-wrapper .amazingcarousel-list .amazingcarousel-item .amazingcarousel-item-container .amazingcarousel-image .amazingcarousel-text + div,
+.wonderplugincarousel-container .wonderplugincarousel .amazingcarousel-list-container .amazingcarousel-list-wrapper .amazingcarousel-list .amazingcarousel-item .amazingcarousel-item-container .amazingcarousel-image .amazingcarousel-text + div {
+  height: 0px;
+  background-color: transparent !important; }
+
+.html5gallery-elem-img-1 a div {
+  position: inherit !important;
+  background-color: red !important; }
+
+/***** widget stuff ****/
+.reach-hide-title .widget-title, .reach-hide-title .tx-div {
+  display: none;
+  height: 0px;
+  padding: 0px; }
+
+.widget-title {
+  text-align: center;
+  font-size: 100%;
+  color: #314c3e; }
+
+.woodlawn-events-side {
+  background-color: #eed7bc;
+  border: 1px solid #884935;
+  border-radius: 3px;
+  padding: 5px; }
+  .woodlawn-events-side .widget-title {
+    text-align: center; }
+
+/**** FOOTER ****/
+.footer-1 {
+  border-top: 1px solid #884935;
+  border-bottom: 3px solid #884935; }
+
+/* styling for nextgen galleries */
+.ngg-breadcrumbs {
+  display: none; }
+
+.ngg-album-compact .ngg-album-compactbox:before, .ngg-album-compact .ngg-album-compactbox:after {
+  border-bottom: 0px; }
+.ngg-album-compact .ngg-album-compactbox {
+  border: 0px;
+  padding: 0px; }
+  .ngg-album-compact .ngg-album-compactbox .Thumb {
+    border-color: #884935; }
+.ngg-album-compact h4 {
+  height: 20px; }
+.ngg-album-compact .ngg-album-desc, .ngg-album-compact .ngg-album-gallery-image-counter {
+  text-align: center; }
+
+.ngg-galleryoverview .ngg-gallery-thumbnail img {
+  background-color: #f1e6d8;
+  border-color: #884935; }
+
+/* styling for tribe events & tribe events shortcode....
+*/
+/* ecs shortcode */
+ul.ecs-event-list {
+  list-style-type: none; }
+  ul.ecs-event-list li.ecs-event {
+    padding-bottom: 10px; }
+    ul.ecs-event-list li.ecs-event h4.entry-title {
+      margin-bottom: 0px; }
+      ul.ecs-event-list li.ecs-event h4.entry-title a {
+        padding-bottom: 0px; }
+    ul.ecs-event-list li.ecs-event p .duration {
+      font-size: smaller; }
+    ul.ecs-event-list li.ecs-event img.wp-post-image {
+      border: 1px solid #884935;
+      margin-right: 5px; }
+
+.woodlawn-events-home ul.ecs-event-list li.ecs-event {
+  text-align: center; }
+.woodlawn-events-home ul.ecs-event-list li.ecs-event:not(:last-child) {
+  padding-bottom: 20px; }
+
+/* single event */
+.tribe-events-single .tribe-events-event-image {
+  float: left;
+  margin-right: 10px;
+  max-width: 60%; }
+.tribe-events-single .tribe-events-single-section.tribe-events-event-meta {
+  clear: both; }
+  .tribe-events-single .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group-venue {
+    width: initial; }
+.tribe-events-single .tribe-events-schedule h2 {
+  font-size: 1.25em; }
+
+#tribe-events-content.tribe-events-list {
+  margin-bottom: 0px; }
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+  background-color: #314c3e; }
+
+/*  month calendar */
+#tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a,
+#tribe-events-header .tribe-events-sub-nav li {
+  display: inline-block; }
+
+.tribe-events-tickets .tribe-tickets-attendees-list-optout {
+  display: none; }
+
+.tribe-tickets-remaining {
+  display: none; }
+
+/********** media - keep last **********/
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+@media only screen and (min-width: 460px) {
+  #content .page-inner > article.post img {
+    width: initial;
+    max-width: 400px;
+    max-height: 400px;
+    padding-left: 10px;
+    float: right;
+    padding-left: 10px; } }
+@media only screen and (max-width: 460px) {
+  #content .page-inner > article.post img {
+    float: none;
+    padding-left: 0px;
+    max-width: 100%;
+    max-height: initial; } }
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (max-width: 500px) {
+  .hide-laptop {
+    display: inline-block !important; }
+
+  #top-bar .left-text {
+    text-align: end; }
+    #top-bar .left-text .html {
+      display: block; }
+      #top-bar .left-text .html .wlm-phone-top {
+        float: left; } }
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  .wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+    display: none; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */

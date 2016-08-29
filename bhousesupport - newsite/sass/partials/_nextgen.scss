@@ -1,0 +1,29 @@
+/* styling for nextgen galleries */
+
+.ngg-breadcrumbs {
+	display: none;
+}
+.ngg-album-compact {
+	.ngg-album-compactbox:before,.ngg-album-compactbox:after {
+		border-bottom :0px;
+	}
+	.ngg-album-compactbox {
+		border: 0px;
+		padding: 0px;
+		.Thumb {
+			border-color: $woodlawn-primary;
+		}
+	}
+	h4 {
+		height: 20px;
+	}
+	.ngg-album-desc, .ngg-album-gallery-image-counter {
+		text-align: center;
+	}
+}
+.ngg-galleryoverview {
+	.ngg-gallery-thumbnail img {
+		background-color: $woodlawn-light-bkg;
+		border-color: $woodlawn-primary;
+	}
+}

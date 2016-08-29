@@ -1,0 +1,256 @@
+/*
+Theme Name: WoodlawnSupport
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome for Woodlawn Museum's support functionality
+Author: Reach Maine
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+@import "partials/print"; 
+@import "partials/woocommerce";
+ 
+.hide-laptop {
+	display: none!important;
+	//height: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+/* =Theme customization starts here */
+/*** HEADER *****/
+#top-bar {
+	.left-text {
+		a {
+			color: white;
+		}
+	}
+}
+#logo {
+/*	vertical-align: bottom;
+	position: absolute;
+	height: 74px;
+	bottom: 5px;
+	a {
+		padding-top: 0px;
+	} */
+}
+#menu-main-menu.top-bar-nav {
+	li a {
+		font-size: 1.1em;
+	}
+}
+#menu-main-menu.top-bar-nav,
+#site-navigation.header-nav {
+	li a {
+		//font-family: Garamond, Georgia, serif;
+		font-family: 'Old Standard TT', Georgia, serif;
+		center {
+			opacity: 0.5;
+		}
+		center:hover {
+			opacity: 1.0;
+		}
+	}
+}
+
+ul.header-nav li {
+	margin-left: 50px;
+}
+
+
+
+/* Huge IT Slider */
+.wlm-homeslider-description {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-left: 15px;
+	font-family: 'Old Standard TT', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	a.button {
+		margin-bottom: 0px;
+		margin-left: 20px;
+		font-size: .6em;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+	}
+	a {
+		color: $woodlawn-tertiary;
+	}
+	a:hover {
+		color: black;
+	}
+}
+.wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+	padding: 2px 0px;
+	position: relative;
+}
+
+.block-html-after-header {
+	margin-bottom: -25px;
+}
+
+
+/**** CONTENT *****/
+//.type-page h1.entry-title, .search-results .text-center h1.entry-title,
+h1.entry-title, h1.page-title,
+h2.tribe-events-page-title, h1.tribe-events-single-event-title {
+	color: $titleFontColor;
+
+}
+.ux-slider, .ux-row-slider {
+	margin-bottom: 0px;
+}
+
+.woodlawn-section:nth-child(even){
+	background-color: $woodlawn-light-bkg;
+	padding-top: 10px;
+	padding-bottom: 16px;
+}
+
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+.product-lightbox .product-gallery-slider .slide img { // add padding around image in product lightbox
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.cart_item {
+
+	.product-thumbnail img {
+		width: 90px!important;
+	} 
+	td.product-name {
+		padding-left: 10px!important;
+	}
+}
+
+.product-info .product_meta {
+	display: none;
+}
+// contact form styling.
+.woodlawn-contact {
+	padding: 10px;
+	background-color: $woodlawn-light-bkg;
+	border: 1px solid $woodlawn-primary;
+	input[name="your-name"],  input[name="your-email"] {
+		max-width: 280px;
+	}
+}
+// blog stuff 
+
+#content .page-inner > article.post { // trying to target ONLY single posts.
+	img {
+		// put featured image on right
+		//float: right; // see media.
+		/* width: initial;
+	    max-width: 400px;
+	    max-height: 400px;
+	    padding-left: 10px; */
+	}
+	.post-date {
+		display: none;
+	}
+	
+
+}
+
+
+
+// banner
+.ux_banner {
+	.inner.bottom {
+		bottom: 0px!important; // really put bottom banners at the bottom;
+	}
+}
+
+
+/*** photo price table styling ****/
+
+table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
+	text-align: center;
+	padding: .5em 5px;
+}
+
+// carousel plugin - remove branding.
+#wonderplugincarousel-1 .amazingcarousel-list-container,
+#wonderplugincarousel-2 .amazingcarousel-list-container,
+.wonderplugincarousel-container .wonderplugincarousel .amazingcarousel-list-container
+ {
+	.amazingcarousel-bottom-shadow {
+		display: none!important;
+	}
+	.amazingcarousel-list-wrapper {
+		.amazingcarousel-list {
+			.amazingcarousel-item {
+				.amazingcarousel-item-container {
+					.amazingcarousel-image {
+						.amazingcarousel-text + div {
+							//background-color: red!important;
+							height: 0px;
+							background-color: transparent!important;
+						}
+					}
+				}
+			}
+
+		}
+
+	}
+}
+// gallery plugin 
+.html5gallery-elem-img-1 {
+	a div {
+		position: inherit!important;
+		background-color: red!important;
+		//display: none!important;
+		//background-color: red;
+	}
+}
+
+
+/***** widget stuff ****/
+.reach-hide-title {
+	.widget-title, .tx-div {
+		display: none;
+		height: 0px;
+		padding: 0px;
+	}
+
+}
+.widget-title {
+	text-align: center;
+	font-size: 100%;
+	color: $woodlawn-secondary;
+}
+.woodlawn-events-side {
+	background-color: $woodlawn-tertiary;
+	border: 1px solid $woodlawn-primary;
+	border-radius: 3px;
+	padding: 5px;
+	.widget-title {
+		text-align: center;
+	}
+}
+
+/**** FOOTER ****/
+.footer-1 {
+	border-top: 1px solid $woodlawn-primary;
+	border-bottom: 3px solid $woodlawn-primary;
+}
+@import "partials/nextgen"; 
+@import "partials/tribe-events"; 
+/********** media - keep last **********/
+@import "partials/media"; 

@@ -1,0 +1,114 @@
+/*
+Theme Name: WoodlawnSupport
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome for Woodlawn Museum's support functionality
+Author: Reach Maine
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+@import url("../flatsome/css/foundation.css");
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+.button.tertiary {
+  background-color: #eed7bc !important; }
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
+/* =Theme customization starts here */
+/*** HEADER *****/
+#logo a {
+  padding-top: 0px; }
+
+#menu-main-menu.top-bar-nav li a {
+  font-size: 1.1em; }
+
+#menu-main-menu.top-bar-nav li a,
+#site-navigation.header-nav li a {
+  font-family: 'Old Standard TT', Georgia, serif; }
+  #menu-main-menu.top-bar-nav li a center,
+  #site-navigation.header-nav li a center {
+    opacity: 0.5; }
+  #menu-main-menu.top-bar-nav li a center:hover,
+  #site-navigation.header-nav li a center:hover {
+    opacity: 1.0; }
+
+ul.header-nav li {
+  margin-left: 50px; }
+
+/* Huge IT Slider */
+.wlm-homeslider-description {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 15px;
+  font-family: 'Old Standard TT', sans-serif;
+  font-weight: 700; }
+  .wlm-homeslider-description a.button {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: .6em;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+  padding: 6px 0px; }
+
+/**** CONTENT *****/
+.ux-slider, .ux-row-slider {
+  margin-bottom: 0px; }
+
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+.product-lightbox .product-gallery-slider .slide img {
+  padding-top: 5px;
+  padding-left: 5px; }
+
+.cart_item .product-thumbnail img {
+  width: 90px !important; }
+.cart_item td.product-name {
+  padding-left: 10px !important; }
+
+.product-info .product_meta {
+  display: none; }
+
+#content .post .entry-image img {
+  width: initial;
+  max-width: 500px;
+  max-height: 600px;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px; }
+
+#content .blog-list-style .post .entry-image img {
+  width: 100%; }
+
+.ux_banner .inner.bottom {
+  bottom: 0px !important; }
+
+/***** widget stuff ****/
+.reach-hide-title .widget-title, .reach-hide-title .tx-div {
+  display: none;
+  height: 0px;
+  padding: 0px; }
+
+/**** FOOTER ****/
+.footer-1 {
+  border-top: 1px solid #884935;
+  border-bottom: 3px solid #884935; }

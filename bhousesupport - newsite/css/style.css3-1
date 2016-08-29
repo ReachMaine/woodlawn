@@ -1,0 +1,65 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: WoodlawnSupport
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome for Woodlawn Museum's support functionality
+Author: Reach Maine
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
+/* =Theme customization starts here */
+.ux-slider, .ux-row-slider {
+  margin-bottom: 0px; }
+
+#logo a {
+  padding-top: 0px; }
+
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+.product-lightbox .product-gallery-slider .slide img {
+  padding-top: 5px;
+  padding-left: 5px; }
+
+.cart_item .product-thumbnail img {
+  width: 90px !important; }
+.cart_item td.product-name {
+  padding-left: 10px !important; }
+
+.product-info .product_meta {
+  display: none; }
+
+#content .post .entry-image img {
+  width: initial;
+  max-width: 500px;
+  max-height: 600px;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px; }
+
+#content .blog-list-style .post .entry-image img {
+  width: 100%; }
+
+.ux_banner .inner.bottom {
+  bottom: 0px !important; }

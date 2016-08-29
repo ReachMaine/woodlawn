@@ -1,0 +1,81 @@
+/* styling for tribe events & tribe events shortcode....
+*/
+
+	/* ecs shortcode */
+	ul.ecs-event-list {
+		list-style-type: none;
+		li.ecs-event {
+			padding-bottom: 10px;
+			h4.entry-title {
+				margin-bottom: 0px;
+				a {
+					padding-bottom: 0px;
+				}
+			}
+			p .duration {
+				font-size: smaller;
+			}
+			img.wp-post-image {
+				border: 1px solid $woodlawn-primary;
+				margin-right: 5px;
+			}
+			
+		}
+	}
+	.woodlawn-events-home {
+		ul.ecs-event-list {
+			li.ecs-event {
+				text-align: center;
+			}
+			li.ecs-event:not(:last-child) {
+				padding-bottom: 20px;
+			}
+		}
+	}
+
+	/* single event */
+	.tribe-events-single {
+		.tribe-events-event-image {
+			float: left;
+			margin-right: 10px;
+			max-width: 60%;
+		}
+		.tribe-events-single-section.tribe-events-event-meta {
+			clear: both;
+			.tribe-events-meta-group-venue  {
+				width: initial;
+			}
+		}
+		.tribe-events-schedule{
+			h2 {
+				font-size: 1.25em;
+			}
+		}
+	}
+
+	// category archive, month list, search results.
+
+	#tribe-events-content.tribe-events-list{
+		margin-bottom: 0px;
+	}
+	#tribe-bar-form .tribe-bar-submit input[type=submit] {
+		background-color: $woodlawn-secondary;
+	}
+
+	 /*  month calendar */
+	 // display/show nav at top.
+	 #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a, 
+	 #tribe-events-header .tribe-events-sub-nav li {
+	 	display: inline-block;
+	 }
+
+// tickets on events.
+.tribe-events-tickets {
+	.tribe-tickets-attendees-list-optout {
+		display: none;
+	}
+}
+// dont show the number remaining if managing stock.
+.tribe-tickets-remaining {
+	display: none;
+}

@@ -1,0 +1,80 @@
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+
+@media only screen and (min-width: 460px) {
+	#content .page-inner > article.post { // trying to target ONLY single posts.
+		img {
+			width: initial;
+	   	 	max-width: 400px;
+	    	max-height: 400px;
+	    	padding-left: 10px;
+			float: right;
+			padding-left: 10px;
+		}
+	}
+}
+@media only screen and (max-width: 460px) { 
+	#content .page-inner > article.post { // trying to target ONLY single posts.
+		img {
+			float: none;
+			padding-left: 0px;
+			max-width: 100%;
+			max-height: initial;
+		}
+	}
+}
+
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (min-width: 48em) { // NOT mobile 786
+
+}
+@media only screen and (max-width: 500px) {
+	.hide-laptop {
+		display: inline-block!important;
+	}
+	#top-bar {
+		.left-text{
+			text-align: end;
+			.html {
+				display: block;
+				.wlm-phone-top {
+					float: left;
+				}
+			}
+		}
+		
+	}
+
+}
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) { // point at which right links disables & phone menu appears.
+	.wlm-homeslider-block {
+		 .huge_it_slideshow_description_text_gallery_2 {
+		 	display : none;
+		 }
+	}
+
+
+}
+
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+}
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 90em) {
+	}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+	}
+/* breakpoints for ux_banners */
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (min-width: 600px) {
+}
