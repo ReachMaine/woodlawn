@@ -15,13 +15,23 @@
 		}
 	}
 }
-@media only screen and (max-width: 460px) { 
+@media only screen and (max-width: 460px) {
 	#content .page-inner > article.post { // trying to target ONLY single posts.
 		img {
 			float: none;
 			padding-left: 0px;
 			max-width: 100%;
 			max-height: initial;
+		}
+	}
+	.tribe-events-list {
+		.tribe-events-loop {
+			.type-tribe_events {
+				.tribe-events-event-image {
+					width: 100%;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
@@ -44,7 +54,7 @@
 				}
 			}
 		}
-		
+
 	}
 
 }

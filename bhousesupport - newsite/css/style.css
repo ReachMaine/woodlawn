@@ -243,6 +243,29 @@ ul.ecs-event-list {
 .tribe-events-single .tribe-events-schedule h2 {
   font-size: 1.25em; }
 
+.tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image {
+  margin-right: 0px;
+  padding-right: 2%;
+  max-width: 40%; }
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image img {
+    width: inherit; }
+.tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
+  padding-right: 0px;
+  width: 60%; }
+
+@media only screen and (max-width: 768px) {
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
+    float: left; } }
+@media only screen and (max-width: 460px) {
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image {
+    text-align: center;
+    padding-right: 0px;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 10px; }
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
+    width: 100%;
+    float: none; } }
 #tribe-events-content.tribe-events-list {
   margin-bottom: 0px; }
 
@@ -277,7 +300,11 @@ ul.ecs-event-list {
     float: none;
     padding-left: 0px;
     max-width: 100%;
-    max-height: initial; } }
+    max-height: initial; }
+
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image {
+    width: 100%;
+    width: 100%; } }
 /* Foundation Block Grids for above small breakpoint */
 @media only screen and (max-width: 500px) {
   .hide-laptop {

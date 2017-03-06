@@ -19,7 +19,7 @@
 				border: 1px solid $woodlawn-primary;
 				margin-right: 5px;
 			}
-			
+
 		}
 	}
 	.woodlawn-events-home {
@@ -54,7 +54,59 @@
 	}
 
 	// category archive, month list, search results.
+	.tribe-events-list {
+		.tribe-events-loop {
+			.type-tribe_events {
+				.tribe-events-event-image {
+					margin-right: 0px;
+					padding-right: 2%;
+					max-width: 40%; // see media below
+					img {
+						width: inherit;
+					}
+				}
+				.tribe-events-content {
+					padding-right: 0px;
+					width: 60%;
+					//max-width: 60%;
+				}
+			}
+		}
 
+	}
+	// mobile calendar list.
+	@media only screen and (max-width: 768px) {
+		.tribe-events-list {
+			.tribe-events-loop {
+				.type-tribe_events {
+					.tribe-events-event-image {
+					}
+					.tribe-events-content {
+						float: left;
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 460px) {
+		.tribe-events-list {
+			.tribe-events-loop {
+				.type-tribe_events {
+					.tribe-events-event-image {
+						text-align: center;
+						padding-right: 0px;
+						max-width: 100%;
+						width: 100%;
+						padding-bottom: 10px;
+					}
+					.tribe-events-content {
+						width: 100%;
+						float: none;
+					}
+				}
+			}
+		}
+	}
 	#tribe-events-content.tribe-events-list{
 		margin-bottom: 0px;
 	}
@@ -64,7 +116,7 @@
 
 	 /*  month calendar */
 	 // display/show nav at top.
-	 #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a, 
+	 #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a,
 	 #tribe-events-header .tribe-events-sub-nav li {
 	 	display: inline-block;
 	 }
