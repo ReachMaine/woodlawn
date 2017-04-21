@@ -7,3 +7,9 @@ input#nyp { // name your price input box.
 .price .pro_price_extra_info {  // tax included part.
 	font-weight: normal;
 }
+
+
+.product-addon input[type="number"].addon-input_multiplier,
+.product-addon input[type="number"].addon-custom-price {
+	max-width: 120px;
+}

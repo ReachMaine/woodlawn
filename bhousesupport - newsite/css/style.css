@@ -37,6 +37,10 @@ input#nyp {
 .price .pro_price_extra_info {
   font-weight: normal; }
 
+.product-addon input[type="number"].addon-input_multiplier,
+.product-addon input[type="number"].addon-custom-price {
+  max-width: 120px; }
+
 .hide-laptop {
   display: none !important;
   margin: 0px;
@@ -271,6 +275,10 @@ ul.ecs-event-list {
     float: none; } }
 #tribe-events-content.tribe-events-list {
   margin-bottom: 0px; }
+
+#tribe-events .button {
+  background: #314c3e !important;
+  background-color: #314c3e !important; }
 
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
   background-color: #314c3e; }
