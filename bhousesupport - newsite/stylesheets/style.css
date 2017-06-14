@@ -1,0 +1,519 @@
+/*
+Theme Name: WoodlawnSupport
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome for Woodlawn Museum's support functionality
+Author: Reach Maine
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+@import url("../flatsome/css/foundation.css");
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/*--- Mobile sizes ---- */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+/* line 26, ../sass/partials/_settings.scss */
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px;
+}
+
+/* line 30, ../sass/partials/_settings.scss */
+.button.tertiary {
+  background-color: #eed7bc !important;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  /* line 7, ../sass/partials/_print.scss */
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: "";
+  }
+}
+/* styling for woocommerce ....
+*/
+/* line 3, ../sass/partials/_woocommerce.scss */
+input#nyp {
+  max-width: 120px;
+  color: #222;
+}
+
+/* line 7, ../sass/partials/_woocommerce.scss */
+.price .pro_price_extra_info {
+  font-weight: normal;
+}
+
+/* line 12, ../sass/partials/_woocommerce.scss */
+.product-addon input[type="number"].addon-input_multiplier,
+.product-addon input[type="number"].addon-custom-price {
+  max-width: 120px;
+}
+
+/* line 16, ../sass/style.scss */
+.hide-laptop {
+  display: none !important;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* =Theme customization starts here */
+/*** HEADER *****/
+/* line 27, ../sass/style.scss */
+#top-bar .left-text a {
+  color: white;
+}
+
+/* line 32, ../sass/style.scss */
+#logo {
+  /*	vertical-align: bottom;
+  	position: absolute;
+  	height: 74px;
+  	bottom: 5px;
+  	a {
+  		padding-top: 0px;
+  	} */
+}
+
+/* line 42, ../sass/style.scss */
+#menu-main-menu.top-bar-nav li a {
+  font-size: 1.1em;
+}
+
+/* line 48, ../sass/style.scss */
+#menu-main-menu.top-bar-nav li a,
+#site-navigation.header-nav li a {
+  font-family: 'Old Standard TT', Georgia, serif;
+}
+/* line 51, ../sass/style.scss */
+#menu-main-menu.top-bar-nav li a center,
+#site-navigation.header-nav li a center {
+  opacity: 0.5;
+}
+/* line 54, ../sass/style.scss */
+#menu-main-menu.top-bar-nav li a center:hover,
+#site-navigation.header-nav li a center:hover {
+  opacity: 1.0;
+}
+
+/* line 60, ../sass/style.scss */
+ul.header-nav li {
+  margin-left: 50px;
+}
+
+/* Huge IT Slider */
+/* line 67, ../sass/style.scss */
+.wlm-homeslider-description {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 15px;
+  font-family: 'Old Standard TT', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* line 74, ../sass/style.scss */
+.wlm-homeslider-description a.button {
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: .6em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 82, ../sass/style.scss */
+.wlm-homeslider-description a {
+  color: #eed7bc;
+}
+/* line 85, ../sass/style.scss */
+.wlm-homeslider-description a:hover {
+  color: black;
+}
+
+/* line 89, ../sass/style.scss */
+.wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+  padding: 2px 0px;
+  position: relative;
+}
+
+/* line 94, ../sass/style.scss */
+.block-html-after-header {
+  margin-bottom: -25px;
+}
+
+/**** CONTENT *****/
+/* line 101, ../sass/style.scss */
+h1.entry-title, h1.page-title,
+h2.tribe-events-page-title, h1.tribe-events-single-event-title {
+  color: #314c3e;
+}
+
+/* line 106, ../sass/style.scss */
+.ux-slider, .ux-row-slider {
+  margin-bottom: 0px;
+}
+
+/* line 110, ../sass/style.scss */
+.woodlawn-section:nth-child(even) {
+  background-color: #F1E6D8;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+/* line 116, ../sass/style.scss */
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 121, ../sass/style.scss */
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px;
+}
+
+/* line 125, ../sass/style.scss */
+.product-lightbox .product-gallery-slider .slide img {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+/* line 132, ../sass/style.scss */
+.cart_item .product-thumbnail img {
+  width: 90px !important;
+}
+/* line 135, ../sass/style.scss */
+.cart_item td.product-name {
+  padding-left: 10px !important;
+}
+
+/* line 140, ../sass/style.scss */
+.product-info .product_meta {
+  display: none;
+}
+
+/* line 144, ../sass/style.scss */
+.woodlawn-contact {
+  padding: 10px;
+  background-color: #F1E6D8;
+  border: 1px solid #884935;
+}
+/* line 148, ../sass/style.scss */
+.woodlawn-contact input[name="your-name"], .woodlawn-contact input[name="your-email"] {
+  max-width: 280px;
+}
+
+/* line 155, ../sass/style.scss */
+#content .page-inner > article.post img {
+  	/* width: initial;
+      max-width: 400px;
+      max-height: 400px;
+      padding-left: 10px; */
+}
+/* line 163, ../sass/style.scss */
+#content .page-inner > article.post .post-date {
+  display: none;
+}
+
+/* line 174, ../sass/style.scss */
+.ux_banner .inner.bottom {
+  bottom: 0px !important;
+}
+
+/*** photo price table styling ****/
+/* line 182, ../sass/style.scss */
+table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
+  text-align: center;
+  padding: .5em 5px;
+}
+
+/* line 192, ../sass/style.scss */
+#wonderplugincarousel-1 .amazingcarousel-list-container .amazingcarousel-bottom-shadow,
+#wonderplugincarousel-2 .amazingcarousel-list-container .amazingcarousel-bottom-shadow,
+.wonderplugincarousel-container .wonderplugincarousel .amazingcarousel-list-container .amazingcarousel-bottom-shadow {
+  display: none !important;
+}
+/* line 200, ../sass/style.scss */
+#wonderplugincarousel-1 .amazingcarousel-list-container .amazingcarousel-list-wrapper .amazingcarousel-list .amazingcarousel-item .amazingcarousel-item-container .amazingcarousel-image .amazingcarousel-text + div,
+#wonderplugincarousel-2 .amazingcarousel-list-container .amazingcarousel-list-wrapper .amazingcarousel-list .amazingcarousel-item .amazingcarousel-item-container .amazingcarousel-image .amazingcarousel-text + div,
+.wonderplugincarousel-container .wonderplugincarousel .amazingcarousel-list-container .amazingcarousel-list-wrapper .amazingcarousel-list .amazingcarousel-item .amazingcarousel-item-container .amazingcarousel-image .amazingcarousel-text + div {
+  height: 0px;
+  background-color: transparent !important;
+}
+
+/* line 215, ../sass/style.scss */
+.html5gallery-elem-img-1 a div {
+  position: inherit !important;
+  background-color: red !important;
+}
+
+/***** widget stuff ****/
+/* line 226, ../sass/style.scss */
+.reach-hide-title .widget-title, .reach-hide-title .tx-div {
+  display: none;
+  height: 0px;
+  padding: 0px;
+}
+
+/* line 233, ../sass/style.scss */
+.widget-title {
+  text-align: center;
+  font-size: 100%;
+  color: #314c3e;
+}
+
+/* line 238, ../sass/style.scss */
+.woodlawn-events-side {
+  background-color: #eed7bc;
+  border: 1px solid #884935;
+  border-radius: 3px;
+  padding: 5px;
+}
+/* line 243, ../sass/style.scss */
+.woodlawn-events-side .widget-title {
+  text-align: center;
+}
+
+/* line 249, ../sass/style.scss */
+#content #archiveList ul {
+  padding-left: 20px;
+}
+
+/* line 255, ../sass/style.scss */
+.textwidget #archiveList li {
+  font-size: .8em;
+}
+
+/**** FOOTER ****/
+/* line 261, ../sass/style.scss */
+.footer-1 {
+  border-top: 1px solid #884935;
+  border-bottom: 3px solid #884935;
+}
+
+/* styling for nextgen galleries */
+/* line 3, ../sass/partials/_nextgen.scss */
+.ngg-breadcrumbs {
+  display: none;
+}
+
+/* line 7, ../sass/partials/_nextgen.scss */
+.ngg-album-compact .ngg-album-compactbox:before, .ngg-album-compact .ngg-album-compactbox:after {
+  border-bottom: 0px;
+}
+/* line 10, ../sass/partials/_nextgen.scss */
+.ngg-album-compact .ngg-album-compactbox {
+  border: 0px;
+  padding: 0px;
+}
+/* line 13, ../sass/partials/_nextgen.scss */
+.ngg-album-compact .ngg-album-compactbox .Thumb {
+  border-color: #884935;
+}
+/* line 17, ../sass/partials/_nextgen.scss */
+.ngg-album-compact h4 {
+  height: 20px;
+}
+/* line 20, ../sass/partials/_nextgen.scss */
+.ngg-album-compact .ngg-album-desc, .ngg-album-compact .ngg-album-gallery-image-counter {
+  text-align: center;
+}
+
+/* line 25, ../sass/partials/_nextgen.scss */
+.ngg-galleryoverview .ngg-gallery-thumbnail img {
+  background-color: #F1E6D8;
+  border-color: #884935;
+}
+
+/* styling for tribe events & tribe events shortcode....
+*/
+/* ecs shortcode */
+/* line 5, ../sass/partials/_tribe-events.scss */
+ul.ecs-event-list {
+  list-style-type: none;
+}
+/* line 7, ../sass/partials/_tribe-events.scss */
+ul.ecs-event-list li.ecs-event {
+  padding-bottom: 10px;
+}
+/* line 9, ../sass/partials/_tribe-events.scss */
+ul.ecs-event-list li.ecs-event h4.entry-title {
+  margin-bottom: 0px;
+}
+/* line 11, ../sass/partials/_tribe-events.scss */
+ul.ecs-event-list li.ecs-event h4.entry-title a {
+  padding-bottom: 0px;
+}
+/* line 15, ../sass/partials/_tribe-events.scss */
+ul.ecs-event-list li.ecs-event p .duration {
+  font-size: smaller;
+}
+/* line 18, ../sass/partials/_tribe-events.scss */
+ul.ecs-event-list li.ecs-event img.wp-post-image {
+  border: 1px solid #884935;
+  margin-right: 5px;
+}
+
+/* line 27, ../sass/partials/_tribe-events.scss */
+.woodlawn-events-home ul.ecs-event-list li.ecs-event {
+  text-align: center;
+}
+/* line 30, ../sass/partials/_tribe-events.scss */
+.woodlawn-events-home ul.ecs-event-list li.ecs-event:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+/* single event */
+/* line 38, ../sass/partials/_tribe-events.scss */
+.tribe-events-single .tribe-events-event-image {
+  float: left;
+  margin-right: 10px;
+  max-width: 60%;
+}
+/* line 43, ../sass/partials/_tribe-events.scss */
+.tribe-events-single .tribe-events-single-section.tribe-events-event-meta {
+  clear: both;
+}
+/* line 45, ../sass/partials/_tribe-events.scss */
+.tribe-events-single .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group-venue {
+  width: initial;
+}
+/* line 50, ../sass/partials/_tribe-events.scss */
+.tribe-events-single .tribe-events-schedule h2 {
+  font-size: 1.25em;
+}
+
+/* line 60, ../sass/partials/_tribe-events.scss */
+.tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image {
+  margin-right: 0px;
+  padding-right: 2%;
+  max-width: 40%;
+}
+/* line 64, ../sass/partials/_tribe-events.scss */
+.tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image img {
+  width: inherit;
+}
+/* line 68, ../sass/partials/_tribe-events.scss */
+.tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
+  padding-right: 0px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 84, ../sass/partials/_tribe-events.scss */
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
+    float: left;
+  }
+}
+@media only screen and (max-width: 460px) {
+  /* line 95, ../sass/partials/_tribe-events.scss */
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image {
+    text-align: center;
+    padding-right: 0px;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  /* line 102, ../sass/partials/_tribe-events.scss */
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 110, ../sass/partials/_tribe-events.scss */
+#tribe-events-content.tribe-events-list {
+  margin-bottom: 0px;
+}
+
+/* line 113, ../sass/partials/_tribe-events.scss */
+#tribe-events .button {
+  background: #314c3e !important;
+  background-color: #314c3e !important;
+}
+
+/* line 117, ../sass/partials/_tribe-events.scss */
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+  background-color: #314c3e;
+}
+
+/*  month calendar */
+/* line 123, ../sass/partials/_tribe-events.scss */
+#tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a,
+#tribe-events-header .tribe-events-sub-nav li {
+  display: inline-block;
+}
+
+/* line 130, ../sass/partials/_tribe-events.scss */
+.tribe-events-tickets .tribe-tickets-attendees-list-optout {
+  display: none;
+}
+
+/* line 135, ../sass/partials/_tribe-events.scss */
+.tribe-tickets-remaining {
+  display: none;
+}
+
+/********** media - keep last **********/
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+@media only screen and (min-width: 460px) {
+  /* line 8, ../sass/partials/_media.scss */
+  #content .page-inner > article.post img {
+    width: initial;
+    max-width: 400px;
+    max-height: 400px;
+    padding-left: 10px;
+    float: right;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  /* line 20, ../sass/partials/_media.scss */
+  #content .page-inner > article.post img {
+    float: none;
+    padding-left: 0px;
+    max-width: 100%;
+    max-height: initial;
+  }
+
+  /* line 30, ../sass/partials/_media.scss */
+  .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image {
+    width: 100%;
+    width: 100%;
+  }
+}
+/* Foundation Block Grids for above small breakpoint */
+@media only screen and (max-width: 500px) {
+  /* line 44, ../sass/partials/_media.scss */
+  .hide-laptop {
+    display: inline-block !important;
+  }
+
+  /* line 48, ../sass/partials/_media.scss */
+  #top-bar .left-text {
+    text-align: end;
+  }
+  /* line 50, ../sass/partials/_media.scss */
+  #top-bar .left-text .html {
+    display: block;
+  }
+  /* line 52, ../sass/partials/_media.scss */
+  #top-bar .left-text .html .wlm-phone-top {
+    float: left;
+  }
+}
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  /* line 64, ../sass/partials/_media.scss */
+  .wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+    display: none;
+  }
+}
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */
