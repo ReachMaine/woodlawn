@@ -191,6 +191,12 @@ table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
   .woodlawn-events-side .widget-title {
     text-align: center; }
 
+#content #archiveList ul {
+  padding-left: 20px; }
+
+.textwidget #archiveList li {
+  font-size: .8em; }
+
 /**** FOOTER ****/
 .footer-1 {
   border-top: 1px solid #884935;
@@ -293,6 +299,10 @@ ul.ecs-event-list {
 
 .tribe-tickets-remaining {
   display: none; }
+
+.tribe-event-tickets-plus-meta-attendee > header,
+.tribe-tickets-meta-label {
+  padding-bottom: 10px; }
 
 /********** media - keep last **********/
 /* ===================================================== */

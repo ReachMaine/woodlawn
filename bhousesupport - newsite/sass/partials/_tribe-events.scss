@@ -135,3 +135,8 @@
 .tribe-tickets-remaining {
 	display: none;
 }
+// add some padding to the label on extra info of tickets
+.tribe-event-tickets-plus-meta-attendee>header,
+.tribe-tickets-meta-label {
+	padding-bottom: 10px;
+}

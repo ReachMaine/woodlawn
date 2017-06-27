@@ -1,5 +1,5 @@
-<?php 
-/* languages customizations  
+<?php
+/* languages customizations
 - add require_once(get_stylesheet_directory().'/custom/language.php'); to functions.php to make this work.
 */
 	if ( !function_exists('reach_change_theme_text') ){
@@ -9,7 +9,7 @@
 			    switch ( $translated_text ) {
 		            case 'This entry was posted in %1$s and tagged %2$s.' :
 		                $translated_text = '';
-		                break; 
+		                break;
 
 		            case 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.':
 		            	$translated_text = '';
@@ -34,7 +34,12 @@
 		            case 'Upcoming %s':
 		            	$translated_text = 'Calendar';
 		            	break;
-
+								case 'Attendee':
+									if ( ($domain = 'event-tickets-plus')  && is_single(2533) )  {
+										$translated_text = 'Player';
+										break;
+									}
+								break;
 
 		        /*    case 'BLOG CATEGORIES':
 		            	$translated_text = __( 'Found in',  $theme_text_domain );
@@ -50,7 +55,7 @@
 		            	break;
 		            case 'Doctors':
 		            	$translated_text = __( 'Providers', $theme_text_domain);
-		            	break; 
+		            	break;
 		            case 'Back to services':
 		            	$translated_text = __( 'All Our Services',  $theme_text_domain  );*/
 		        }
@@ -60,4 +65,3 @@
 		}
 		add_filter( 'gettext', 'reach_change_theme_text', 20, 3 );
 	}
-
