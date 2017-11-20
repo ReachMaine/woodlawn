@@ -41,6 +41,9 @@ input#nyp {
 .product-addon input[type="number"].addon-custom-price {
   max-width: 120px; }
 
+label.screen-reader-text {
+  display: none; }
+
 .hide-laptop {
   display: none !important;
   margin: 0px;

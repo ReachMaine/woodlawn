@@ -54,6 +54,11 @@ input#nyp {
   max-width: 120px;
 }
 
+/* line 17, ../sass/partials/_woocommerce.scss */
+label.screen-reader-text {
+  display: none;
+}
+
 /* line 16, ../sass/style.scss */
 .hide-laptop {
   display: none !important;
@@ -453,6 +458,12 @@ ul.ecs-event-list li.ecs-event img.wp-post-image {
 /* line 135, ../sass/partials/_tribe-events.scss */
 .tribe-tickets-remaining {
   display: none;
+}
+
+/* line 139, ../sass/partials/_tribe-events.scss */
+.tribe-event-tickets-plus-meta-attendee > header,
+.tribe-tickets-meta-label {
+  padding-bottom: 10px;
 }
 
 /********** media - keep last **********/

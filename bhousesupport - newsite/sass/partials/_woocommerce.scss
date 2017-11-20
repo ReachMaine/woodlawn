@@ -13,3 +13,7 @@ input#nyp { // name your price input box.
 .product-addon input[type="number"].addon-custom-price {
 	max-width: 120px;
 }
+
+label.screen-reader-text {
+	display: none;
+}
