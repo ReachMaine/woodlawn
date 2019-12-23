@@ -8,11 +8,14 @@ Template: flatsome
 Version: 1.8
 */
 
-@import url("../flatsome/css/foundation.css");
+//@import url("../flatsome/css/foundation.css");
 @import "partials/settings";
 @import "partials/print";
 @import "partials/woocommerce";
 
+body.framed {
+	margin-top: 0px!important;//now "framed" site -  new for 3.10
+}
 .hide-laptop {
 	display: none!important;
 	//height: 0px;
@@ -23,10 +26,19 @@ Version: 1.8
 /* =Theme customization starts here */
 /*** HEADER *****/
 #top-bar {
-	.left-text {
-		a {
+	.nav-left a,
+	.nav-right > li> a,
+	.left-text a {
 			color: white;
+			font-family: sans-serif;
 		}
+
+}
+#home-intro {
+	position: relative;
+	z-index: 10;
+	img {
+		width: 100%;
 	}
 }
 #logo {
@@ -57,10 +69,18 @@ Version: 1.8
 	}
 }
 
-ul.header-nav li {
-	margin-left: 50px;
+ul.header-nav>li {
+	margin-left: 30px;
 }
-
+// generica menu stuff
+ul.nav-dropdown {
+	padding: 0px 10px!important;
+	min-width: inherit!important;
+	li a {
+		text-transform: uppercase;
+		font-size: .8em;
+	}
+}
 
 
 /* Huge IT Slider */
@@ -107,10 +127,16 @@ h2.tribe-events-page-title, h1.tribe-events-single-event-title {
 	margin-bottom: 0px;
 }
 
+.woodlawn-section {
+	padding-top: 15px;
+	.col {
+		padding-bottom: 15px;
+	}
+}
 .woodlawn-section:nth-child(even){
 	background-color: $woodlawn-light-bkg;
-	padding-top: 10px;
-	padding-bottom: 16px;
+	//padding-top: 10px;
+	//padding-bottom: 16px;
 }
 
 .from_the_blog_comments { // hide comments on blog shortcode
@@ -258,9 +284,19 @@ table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
 }
 
 /**** FOOTER ****/
-.footer-1 {
-	border-top: 1px solid $woodlawn-primary;
-	border-bottom: 3px solid $woodlawn-primary;
+#footer {
+	.footer-1 {
+		border-top: 1px solid $woodlawn-primary;
+		border-bottom: 3px solid $woodlawn-primary;
+			.menu { // ul
+				li.menu-item a {
+					color: $woodlawn-footer-font;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+		}
+	}
 }
 @import "partials/nextgen";
 @import "partials/tribe-events";

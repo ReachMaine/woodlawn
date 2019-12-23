@@ -1,16 +1,19 @@
-<?php 
+<?php
 /* woocommerce */
-	//*** woocommerce stuff.  
+	//*** woocommerce stuff.
 
-/***************************** 
+/*****************************
 	* things in this function are called after flatsome is setup, if want to use flatsome values OR calls OR
 	to overwrite flatsome specific things.  they need to go here, everytning else can just go in the file.
 	**********************/
 	function reach_woo_setup() {
 
 		/* remove the sorting & results at top of category */
-		remove_action( 'flatsome_shop_category_nav_right', 'woocommerce_result_count', 20 );
-		remove_action( 'flatsome_shop_category_nav_right', 'woocommerce_catalog_ordering', 30 );
+		remove_action( 'flatsome_shop_category_nav_right', 'woocommerce_result_count', 20 ); // old
+		remove_action( 'flatsome_shop_category_nav_right', 'woocommerce_catalog_ordering', 30 );// old
+		remove_action( 'flatsome_category_title_alt', 'woocommerce_result_count', 20 );
+    remove_action( 'flatsome_category_title_alt', 'woocommerce_catalog_ordering', 30 );
+
 
 	}
 
@@ -20,7 +23,7 @@
 	    $fields['order']['order_comments']['placeholder'] = 'Notes about your order';
 	    $fields['order']['order_comments']['label'] = 'Notes';
 	    return $fields;
-	} 
+	}
 
 	/**
 	 * Hides the 'Free!' price notice
@@ -71,7 +74,7 @@
 					$product_image = $event_image;
 				}
 			}
-		
+
 		}
 		return $product_image;
 	}
@@ -105,6 +108,6 @@
 	function woo_tickets_filter_completed_order($text) {
 
 		$text = "This confirmation serves as your ticket to this event.";
-	 
+
 		return $text;
 	}

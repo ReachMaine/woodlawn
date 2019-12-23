@@ -7,7 +7,6 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 1.8
 */
-@import url("../flatsome/css/foundation.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /*--- Mobile sizes ---- */
@@ -44,6 +43,9 @@ input#nyp {
 label.screen-reader-text {
   display: none; }
 
+body.framed {
+  margin-top: 0px !important; }
+
 .hide-laptop {
   display: none !important;
   margin: 0px;
@@ -52,8 +54,17 @@ label.screen-reader-text {
 
 /* =Theme customization starts here */
 /*** HEADER *****/
+#top-bar .nav-left a,
+#top-bar .nav-right > li > a,
 #top-bar .left-text a {
-  color: white; }
+  color: white;
+  font-family: sans-serif; }
+
+#home-intro {
+  position: relative;
+  z-index: 10; }
+  #home-intro img {
+    width: 100%; }
 
 #logo {
   /*	vertical-align: bottom;
@@ -77,8 +88,15 @@ label.screen-reader-text {
   #site-navigation.header-nav li a center:hover {
     opacity: 1.0; }
 
-ul.header-nav li {
-  margin-left: 50px; }
+ul.header-nav > li {
+  margin-left: 30px; }
+
+ul.nav-dropdown {
+  padding: 0px 10px !important;
+  min-width: inherit !important; }
+  ul.nav-dropdown li a {
+    text-transform: uppercase;
+    font-size: .8em; }
 
 /* Huge IT Slider */
 .wlm-homeslider-description {
@@ -114,10 +132,13 @@ h2.tribe-events-page-title, h1.tribe-events-single-event-title {
 .ux-slider, .ux-row-slider {
   margin-bottom: 0px; }
 
+.woodlawn-section {
+  padding-top: 15px; }
+  .woodlawn-section .col {
+    padding-bottom: 15px; }
+
 .woodlawn-section:nth-child(even) {
-  background-color: #F1E6D8;
-  padding-top: 10px;
-  padding-bottom: 16px; }
+  background-color: #F1E6D8; }
 
 .from_the_blog_comments {
   display: none;
@@ -201,9 +222,13 @@ table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
   font-size: .8em; }
 
 /**** FOOTER ****/
-.footer-1 {
+#footer .footer-1 {
   border-top: 1px solid #884935;
   border-bottom: 3px solid #884935; }
+  #footer .footer-1 .menu li.menu-item a {
+    color: #777;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 /* styling for nextgen galleries */
 .ngg-breadcrumbs {
@@ -251,7 +276,7 @@ ul.ecs-event-list {
 .tribe-events-single .tribe-events-event-image {
   float: left;
   margin-right: 10px;
-  max-width: 60%; }
+  max-width: 40%; }
 .tribe-events-single .tribe-events-single-section.tribe-events-event-meta {
   clear: both; }
   .tribe-events-single .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group-venue {
@@ -266,8 +291,7 @@ ul.ecs-event-list {
   .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-image img {
     width: inherit; }
 .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
-  padding-right: 0px;
-  width: 60%; }
+  padding-right: 0px; }
 
 @media only screen and (max-width: 768px) {
   .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-content {
@@ -343,6 +367,9 @@ ul.ecs-event-list {
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 48em) {
   .wlm-homeslider-block .huge_it_slideshow_description_text_gallery_2 {
+    display: none; }
+
+  #home-intro {
     display: none; } }
 /* Medium Displays: 768px - 1279px */
 /* Styles for screens that are atleast 768px; */
