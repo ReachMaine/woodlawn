@@ -2,7 +2,7 @@
 
 //add disclaimer at bottom of all events //
 
-add_action('tribe_events_single_event_after_the_meta', 'wlm_events_caveat', 3);
+//add_action('tribe_events_single_event_after_the_meta', 'wlm_events_caveat', 3); // disabled zig Feb2020
 function wlm_events_caveat() {
 	$evt_cost = tribe_get_cost();
 	if ( ($evt_cost) && ($evt_cost > 0) ) {
