@@ -21,6 +21,23 @@ Version: 1.8
 .button.tertiary {
   background-color: #eed7bc !important; }
 
+/* ----- other stuff */
+li.wlm-menu-hilite {
+  background-color: #314c3e; }
+  li.wlm-menu-hilite > a {
+    color: white; }
+
+ul.header-nav-main li.wlm-menu-hilite {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px !important; }
+  ul.header-nav-main li.wlm-menu-hilite > a:hover {
+    opacity: .8;
+    color: #F1E6D8 !important; }
+
+a.wlm-button-right {
+  float: right; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */

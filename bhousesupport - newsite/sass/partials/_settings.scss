@@ -31,3 +31,25 @@ $MobileL: 425;
 .button.tertiary {
 	background-color: $woodlawn-tertiary!important;
 }
+
+/* ----- other stuff */
+li.wlm-menu-hilite {
+	background-color: $woodlawn-secondary;
+	>a {
+		color: white;
+	}
+}
+ul.header-nav-main { // only on maine menu
+	li.wlm-menu-hilite {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 10px!important;
+		>a:hover {
+			opacity: .8;
+			color: $woodlawn-light-bkg!important;
+		}
+	}
+}
+a.wlm-button-right {
+	float: right;
+}

@@ -37,9 +37,9 @@ if ( ! function_exists( 'flatsome_posted_on' ) ) {
     }
 } // end if defined flatsome_posted_on
 
-add_action('flatsome_after_header', 'wlm_homeslideshow');
+//add_action('flatsome_after_header', 'wlm_homeslideshow');
 function wlm_homeslideshow() {
   if ( is_front_page() ) {
     echo do_shortcode('<div class="wlm-homeslider-block">[block id="huge-it-slider"]</div>');
-  } 
+  }
 }
