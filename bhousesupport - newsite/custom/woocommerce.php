@@ -51,7 +51,7 @@
 	 * Adding event title (linked) to WooCommerce checkout for Events Calendar tickets.
 	 * shows on cartpage & checkout page.
 	 */
-	add_filter( 'woocommerce_cart_item_name', 'woocommerce_cart_item_name_event_title', 10, 3 );
+	//add_filter( 'woocommerce_cart_item_name', 'woocommerce_cart_item_name_event_title', 10, 3 );
 	function woocommerce_cart_item_name_event_title( $title, $values, $cart_item_key ) {
 		$eventobj = tribe_events_get_ticket_event( $values['product_id'] );
 		if ( $eventobj !== false ) {
