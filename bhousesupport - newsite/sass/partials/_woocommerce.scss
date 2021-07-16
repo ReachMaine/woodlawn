@@ -17,3 +17,19 @@ input#nyp { // name your price input box.
 label.screen-reader-text {
 	display: none;
 }
+
+// single product
+.product {
+	// product add ons
+	.wc-pao-addons-container {
+		.wc-pao-addon-container.wc-pao-addon {
+			p.form-row {
+				margin-top: 0px;
+				input {
+					margin-bottom: 0px;
+				}
+			}
+
+		}
+	}
+}
