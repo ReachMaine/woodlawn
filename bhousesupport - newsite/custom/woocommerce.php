@@ -82,7 +82,7 @@
 	// show event title & date on admin orders screen.
 	function zig_show_event_item_info( $name, $item, $false ) {
 		$event_title = "";
-		$eventobj = tribe_events_get_ticket_event( $item['product_id'] );
+		/*$eventobj = tribe_events_get_ticket_event( $item['product_id'] );
 		if ( $eventobj !== false ) {
 			//$event_title .= " [".$eventobj->ID."] "; // for debugging
 			$etitle = $eventobj->post_title;
@@ -90,14 +90,14 @@
 				$event_title .= ' - '.$etitle;
 			}
 	        $event_title .= ' ('.tribe_get_start_date( $eventobj ).')';
-	    }
+	    }*/
 		return $name . $event_title;
 	}
-	add_filter( 'woocommerce_order_item_name', 'zig_show_event_item_info', 10, 3 );
+	//add_filter( 'woocommerce_order_item_name', 'zig_show_event_item_info', 10, 3 );
 
 
 	// show the event title & date on admin edit screen.
-	add_action ('woocommerce_after_order_itemmeta', 'zig_admin_item_info', 10, 3);
+	//add_action ('woocommerce_after_order_itemmeta', 'zig_admin_item_info', 10, 3);
 	function zig_admin_item_info ($item_id, $item, $_product ) {
 		$out_html = zig_show_event_item_info("", $item, false);
 		echo $out_html;
