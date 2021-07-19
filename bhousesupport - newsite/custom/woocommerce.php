@@ -64,7 +64,7 @@
 	}
 
 	// use event image in cart instead of placeholder image (i.e. there isnt a product image)
-	add_filter( 'woocommerce_cart_item_thumbnail', 'reach_cart_image_event', 10, 3);
+//	add_filter( 'woocommerce_cart_item_thumbnail', 'reach_cart_image_event', 10, 3);
 	function reach_cart_image_event($product_image, $cart_item, $cart_itemkey) {
 		if (strpos($product_image, "placeholder")) {
 			$eventobj = tribe_events_get_ticket_event( $cart_item['product_id'] );
@@ -111,3 +111,12 @@
 
 		return $text;
 	}
+
+	//Remove additional information tab
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+}
