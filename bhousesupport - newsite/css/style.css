@@ -33,7 +33,7 @@ ul.header-nav-main li.wlm-menu-hilite {
   margin-left: 10px !important; }
   ul.header-nav-main li.wlm-menu-hilite > a:hover {
     opacity: .8;
-    color: #F1E6D8 !important; }
+    color: #f9efde !important; }
 
 a.wlm-button-right {
   float: right; }
@@ -166,7 +166,7 @@ h2.tribe-events-page-title, h1.tribe-events-single-event-title {
     padding-bottom: 15px; }
 
 .woodlawn-section:nth-child(even) {
-  background-color: #F1E6D8; }
+  background-color: #f9efde; }
 
 .from_the_blog_comments {
   display: none;
@@ -189,8 +189,8 @@ aside.widget.widget_recent_entries li {
 
 .woodlawn-contact {
   padding: 10px;
-  background-color: #F1E6D8;
-  border: 1px solid #884935; }
+  background-color: #f9efde;
+  border: 1px solid #A6192E; }
   .woodlawn-contact input[name="your-name"], .woodlawn-contact input[name="your-email"] {
     max-width: 280px; }
 
@@ -237,7 +237,7 @@ table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
 
 .woodlawn-events-side {
   background-color: #eed7bc;
-  border: 1px solid #884935;
+  border: 1px solid #A6192E;
   border-radius: 3px;
   padding: 5px; }
   .woodlawn-events-side .widget-title {
@@ -251,8 +251,8 @@ table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
 
 /**** FOOTER ****/
 #footer .footer-1 {
-  border-top: 1px solid #884935;
-  border-bottom: 3px solid #884935; }
+  border-top: 1px solid #A6192E;
+  border-bottom: 3px solid #A6192E; }
   #footer .footer-1 .menu li.menu-item a {
     color: #777;
     font-weight: bold;
@@ -268,15 +268,15 @@ table.woodlawn-photo-pricelist tr th, table.woodlawn-photo-pricelist tr td {
   border: 0px;
   padding: 0px; }
   .ngg-album-compact .ngg-album-compactbox .Thumb {
-    border-color: #884935; }
+    border-color: #A6192E; }
 .ngg-album-compact h4 {
   height: 20px; }
 .ngg-album-compact .ngg-album-desc, .ngg-album-compact .ngg-album-gallery-image-counter {
   text-align: center; }
 
 .ngg-galleryoverview .ngg-gallery-thumbnail img {
-  background-color: #F1E6D8;
-  border-color: #884935; }
+  background-color: #f9efde;
+  border-color: #A6192E; }
 
 /* styling for tribe events & tribe events shortcode....
 */
@@ -292,7 +292,7 @@ ul.ecs-event-list {
     ul.ecs-event-list li.ecs-event p .duration {
       font-size: smaller; }
     ul.ecs-event-list li.ecs-event img.wp-post-image {
-      border: 1px solid #884935;
+      border: 1px solid #A6192E;
       margin-right: 5px; }
 
 .woodlawn-events-home ul.ecs-event-list li.ecs-event {
