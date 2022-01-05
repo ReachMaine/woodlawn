@@ -32,8 +32,18 @@ body.framed {
 			color: white;
 			font-family: sans-serif;
 		}
-
+	ul.nav.top-bar-nav.nav-right {
+		li.wlm-menu-top-hilite {
+			background-color: white;
+			padding-left: 10px;
+			padding-right: 10px;
+			>a {
+				color: $woodlawn-secondary;
+			}
+		}
+	}
 }
+
 #home-intro {
 	position: relative;
 	z-index: 10;

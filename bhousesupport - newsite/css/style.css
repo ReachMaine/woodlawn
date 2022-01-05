@@ -81,6 +81,12 @@ body.framed {
 #top-bar .left-text a {
   color: white;
   font-family: sans-serif; }
+#top-bar ul.nav.top-bar-nav.nav-right li.wlm-menu-top-hilite {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px; }
+  #top-bar ul.nav.top-bar-nav.nav-right li.wlm-menu-top-hilite > a {
+    color: #314c3e; }
 
 #home-intro {
   position: relative;
