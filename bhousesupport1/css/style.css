@@ -38,6 +38,11 @@ ul.header-nav-main li.wlm-menu-hilite {
 a.wlm-button-right {
   float: right; }
 
+.section.woodlawn-sched .row .col {
+  padding-bottom: 0px !important; }
+  .section.woodlawn-sched .row .col p {
+    margin-bottom: 0px !important; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
@@ -404,3 +409,5 @@ ul.ecs-event-list {
 /* Large Displays: 1280px - 1440px */
 /* X-Large Displays: 1400px and up */
 /* breakpoints for ux_banners */
+
+/*# sourceMappingURL=style.css.map */
